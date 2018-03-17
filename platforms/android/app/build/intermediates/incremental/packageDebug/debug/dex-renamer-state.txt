@@ -1,0 +1,4 @@
+#Sat Mar 17 16:43:55 CET 2018
+base.0=/Users/zanzagar/Dropbox/Drustvo_rac/QR_scanner/qr_scanner/qr_scanner/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/zanzagar/Dropbox/Drustvo_rac/QR_scanner/qr_scanner/qr_scanner/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

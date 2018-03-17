@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/zanzagar/Dropbox/Drustvo_rac/QR_scanner/qr_scanner/qr_scanner/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
+            "map": [
+                {
+                    "source": "/Users/zanzagar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a563506ea14d2cb7427687e8f84eb5de/res/values-gu/values-gu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
