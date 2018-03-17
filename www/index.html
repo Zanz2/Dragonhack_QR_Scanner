@@ -78,6 +78,27 @@
     data = JSON.stringify(data);
     localStorage.setItem("LocalData", data);
 }
+function api_call(json_objekt){
+    $.ajax({
+      url: "POVEZAVA_DO_APIJA",
+      type: "POST",
+      data: {
+        json_data:JSON.stringify(json_objekt)
+      },
+      sucess: function (data) {
+          //data = JSON.parse(data)
+          if(data.mu_dovolimo_jesti){
+
+          }else{
+
+          } //true ali false
+      }, // ali alert("success")
+      error: function (data) {
+          alert("failed")
+      }, // ali alert("fail")
+      dataType: "html"
+    });
+}
 function scan()
 {
     cordova.plugins.barcodeScanner.scan(
@@ -94,10 +115,10 @@ function scan()
                         console.log(data);
                         data = JSON.parse(data);
                         data[data.length] = [name, value];
-
+                        value_parsed = JSON.parse(value)
+                        api_call(value_parsed)
                         localStorage.setItem("LocalData", JSON.stringify(data));
-
-                        alert("Done");
+                        //alert("Done");
                     });
                 }
             }
