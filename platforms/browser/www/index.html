@@ -40,12 +40,18 @@
         <div data-role="page" id="home">
     <div data-role="header">
         <h1>Home</h1>
+		
     </div>
 
     <div data-role="main" class="ui-content">
         <p>
             <a target="_blank" href="javascript:scan();" style="text-decoration: none"><button>Scan</button></a>
             <a target="_blank" href="#display" style="text-decoration: none"><button>Display Scanned Data</button></a>
+			<form>
+	<input type="radio" name="obrok" value="zajtrk"> Zajtrk<br>
+	<input type="radio" name="obrok" value="kosilo"> Kosilo<br>
+	<input type="radio" name="obrok" value="večerja"> Večerja 
+		</form> 
         </p>
     </div>
 </div>
@@ -78,7 +84,8 @@
     data = JSON.stringify(data);
     localStorage.setItem("LocalData", data);
 }
-function api_call(argument1,argument2,argument3){
+function api_call(argument1,argument2){
+	var argument3 = $('input[name=obrok]:checked').val();
     $.ajax({
       url: "POVEZAVA_DO_APIJA",
       type: "POST",
